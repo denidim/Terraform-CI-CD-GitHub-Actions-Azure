@@ -93,5 +93,5 @@ resource "azurerm_app_service_source_control" "sourcecontrol" {
   //repo_url               = "https://github.com/denidim/Terraform-Deploy-To-Azure-Task-Board-App-With-Database"
   repo_url               = var.repo_url
   branch                 = "main"
-  use_manual_integration = true
+  use_manual_integration = false
 }
