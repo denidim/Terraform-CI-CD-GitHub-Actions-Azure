@@ -40,7 +40,7 @@ jobs:
     # Generates an execution plan for Terraform
     - name: Terraform Plan
       id: tf-plan
-      run: terraform plan -var-file taskboardAppValues.tfvars -var-file taskboardAppSecrets.tfvars -out tfplan
+      run: terraform plan -out tfplan
         
     # Save plan to artifacts  
     - name: Publish Terraform Plan
